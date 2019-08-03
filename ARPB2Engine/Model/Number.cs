@@ -11,7 +11,7 @@ namespace ARPB2Engine.Model
 
         public bool Equals(Number other)
         {
-            return (int)value == (int)other.value;
+            return value == other.value;
         }
 
 

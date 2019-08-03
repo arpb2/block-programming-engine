@@ -50,6 +50,7 @@
     <Compile Include="Model\Function.cs" />
     <Compile Include="Model\Number.cs" />
     <Compile Include="Model\Char.cs" />
+    <Compile Include="Model\String.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

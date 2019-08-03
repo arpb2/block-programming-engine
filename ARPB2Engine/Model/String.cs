@@ -1,20 +1,20 @@
 ﻿using System;
 namespace ARPB2Engine.Model
 {
-    public class Boolean : ILiteral<Boolean>, IEquatable<Boolean>
+    public class String : ILiteral<String>, IEquatable<String>
     {
-        bool value;
-        public Boolean(bool value)
+        string value;
+        public String(string value)
         {
             this.value = value;
         }
 
-        public bool Equals(Boolean other)
+        public bool Equals(String other)
         {
             return value == other.value;
         }
 
-        object ILiteral<Boolean>.GetValue()
+        object ILiteral<String>.GetValue()
         {
             return value;
         }

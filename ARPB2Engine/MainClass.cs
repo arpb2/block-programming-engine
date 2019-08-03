@@ -41,6 +41,17 @@ namespace ARPB2Engine
             Function function3 = new Function(print);
             If @if3 = new If(function3);
             @if3.conditions.Add(equalsChar);
+
+            Equals<Model.String> equalsString = new Equals<Model.String>
+            {
+                LeftHand = new Model.String("holu"),
+                RightHand = new Model.String("holu")
+            };
+
+            System.Console.WriteLine("Result: " + equalsString.Execute());
+            Function function4 = new Function(print);
+            If @if4 = new If(function4);
+            @if4.conditions.Add(equalsString);
         }
 
         static int print(string str)
