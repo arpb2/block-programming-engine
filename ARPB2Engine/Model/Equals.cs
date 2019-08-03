@@ -1,10 +1,10 @@
 ﻿using System;
 namespace ARPB2Engine.Model
 {
-    public class Equals : Operator
+    public class Equals<T> : Operator
     {
-        public ILiteral<Boolean> LeftHand { get; set; }
-        public ILiteral<Boolean> RightHand { get; set; }
+        public ILiteral<T> LeftHand { get; set; }
+        public ILiteral<T> RightHand { get; set; }
 
         public Equals()
         {
