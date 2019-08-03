@@ -37,20 +37,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+    <Folder Include="Model\Literals\" />
+    <Folder Include="Model\Operators\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\IExecutable.cs" />
     <Compile Include="Model\Statement.cs" />
     <Compile Include="Model\If.cs" />
-    <Compile Include="Model\ILiteral.cs" />
-    <Compile Include="Model\Operator.cs" />
-    <Compile Include="Model\Boolean.cs" />
-    <Compile Include="Model\Equals.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Model\Function.cs" />
-    <Compile Include="Model\Number.cs" />
-    <Compile Include="Model\Char.cs" />
-    <Compile Include="Model\String.cs" />
+    <Compile Include="Model\Literals\Boolean.cs" />
+    <Compile Include="Model\Literals\Char.cs" />
+    <Compile Include="Model\Literals\ILiteral.cs" />
+    <Compile Include="Model\Literals\Number.cs" />
+    <Compile Include="Model\Literals\String.cs" />
+    <Compile Include="Model\Operators\Equals.cs" />
+    <Compile Include="Model\Operators\Operator.cs" />
+    <Compile Include="Model\Operators\NotEquals.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
