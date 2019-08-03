@@ -30,6 +30,17 @@ namespace ARPB2Engine
             Function function2 = new Function(print);
             If @if2 = new If(function2);
             @if2.conditions.Add(equalsNumber);
+
+            Equals<Character> equalsChar = new Equals<Character>
+            {
+                LeftHand = new Character('a'),
+                RightHand = new Character('a')
+            };
+
+            System.Console.WriteLine("Result: " + equalsChar.Execute());
+            Function function3 = new Function(print);
+            If @if3 = new If(function3);
+            @if3.conditions.Add(equalsChar);
         }
 
         static int print(string str)
