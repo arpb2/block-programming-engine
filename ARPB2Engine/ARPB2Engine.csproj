@@ -54,6 +54,8 @@
     <Compile Include="Model\Operators\Equals.cs" />
     <Compile Include="Model\Operators\Operator.cs" />
     <Compile Include="Model\Operators\NotEquals.cs" />
+    <Compile Include="Model\Operators\GreaterThan.cs" />
+    <Compile Include="Model\Operators\LessThan.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
