@@ -1,5 +1,6 @@
 ﻿using System;
 using ARPB2Engine.Model;
+using ARPB2Engine.Model.Operators;
 using Boolean = ARPB2Engine.Model.Boolean;
 
 namespace ARPB2Engine

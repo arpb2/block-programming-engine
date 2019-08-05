@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ARPB2Engine.Model
+namespace ARPB2Engine.Model.Operators
 {
     public abstract class Operator : IExecutable
     {

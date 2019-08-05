@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ARPB2Engine.Model.Operators;
 
 namespace ARPB2Engine.Model
 {
