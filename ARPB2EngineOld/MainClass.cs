@@ -16,7 +16,7 @@ namespace ARPB2Engine
             };
 
             System.Console.WriteLine("Result: " + equals.Execute());
-            Function function = new Function(print);
+            Function function = new Function(Print);
             If @if = new If(function);
             @if.conditions.Add(equals);
             @if.Execute();
@@ -28,7 +28,7 @@ namespace ARPB2Engine
             };
 
             System.Console.WriteLine("Result: " + equalsNumber.Execute());
-            Function function2 = new Function(print);
+            Function function2 = new Function(Print);
             If @if2 = new If(function2);
             @if2.conditions.Add(equalsNumber);
 
@@ -39,7 +39,7 @@ namespace ARPB2Engine
             };
 
             System.Console.WriteLine("Result: " + equalsChar.Execute());
-            Function function3 = new Function(print);
+            Function function3 = new Function(Print);
             If @if3 = new If(function3);
             @if3.conditions.Add(equalsChar);
 
@@ -50,12 +50,12 @@ namespace ARPB2Engine
             };
 
             System.Console.WriteLine("Result: " + equalsString.Execute());
-            Function function4 = new Function(print);
+            Function function4 = new Function(Print);
             If @if4 = new If(function4);
             @if4.conditions.Add(equalsString);
         }
 
-        static int print(string str)
+        static int Print(string str)
         {
             System.Console.WriteLine(str);
             return 0;

@@ -1,7 +1,11 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPB2Engine", "ARPB2Engine\ARPB2Engine.csproj", "{3A66B51C-E2A7-4C53-B5F7-9BB83561F36F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPB2EngineOld", "ARPB2EngineOld\ARPB2EngineOld.csproj", "{3A66B51C-E2A7-4C53-B5F7-9BB83561F36F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPB2Engine", "ARPB2Engine\ARPB2Engine.csproj", "{912771A0-5F35-49BD-AA15-5EFDB8D4A4E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPB2EngineTest", "ARPB2EngineTest\ARPB2EngineTest.csproj", "{425A3BEF-14F4-4961-9BE3-B8A077E132B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +17,13 @@ Global
 		{3A66B51C-E2A7-4C53-B5F7-9BB83561F36F}.Debug|x86.Build.0 = Debug|x86
 		{3A66B51C-E2A7-4C53-B5F7-9BB83561F36F}.Release|x86.ActiveCfg = Release|x86
 		{3A66B51C-E2A7-4C53-B5F7-9BB83561F36F}.Release|x86.Build.0 = Release|x86
+		{912771A0-5F35-49BD-AA15-5EFDB8D4A4E4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{912771A0-5F35-49BD-AA15-5EFDB8D4A4E4}.Debug|x86.Build.0 = Debug|Any CPU
+		{912771A0-5F35-49BD-AA15-5EFDB8D4A4E4}.Release|x86.ActiveCfg = Release|Any CPU
+		{912771A0-5F35-49BD-AA15-5EFDB8D4A4E4}.Release|x86.Build.0 = Release|Any CPU
+		{425A3BEF-14F4-4961-9BE3-B8A077E132B5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{425A3BEF-14F4-4961-9BE3-B8A077E132B5}.Debug|x86.Build.0 = Debug|Any CPU
+		{425A3BEF-14F4-4961-9BE3-B8A077E132B5}.Release|x86.ActiveCfg = Release|Any CPU
+		{425A3BEF-14F4-4961-9BE3-B8A077E132B5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
