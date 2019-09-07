@@ -15,7 +15,7 @@ namespace ARPB2EngineTest
                 LeftHand = new Boolean(true),
                 RightHand = new Boolean(false)
             };
-            Assert.Equal(false, equals.Execute());
+            Assert.False(equals.Execute());
         }
     }
 }

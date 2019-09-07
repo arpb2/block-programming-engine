@@ -12,7 +12,7 @@ namespace ARPB2Engine.Model.Operators
 
         public override bool Execute()
         {
-            if (LeftHand.Equals(typeof(Number)) || RightHand.Equals(typeof(Number)))
+            if (LeftHand.GetType().Equals(typeof(Number)) && RightHand.GetType().Equals(typeof(Number)))
             {
                 return (int)LeftHand.GetValue() > (int)RightHand.GetValue();
             }
