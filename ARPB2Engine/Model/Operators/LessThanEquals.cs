@@ -1,10 +1,10 @@
 ﻿using System;
 namespace ARPB2Engine.Model.Operators
 {
-    public class LessThanEquals<T> : Operator
+    public class LessThanEquals : Operator
     {
-        public ILiteral<T> LeftHand { get; set; }
-        public ILiteral<T> RightHand { get; set; }
+        public ILiteral LeftHand { get; set; }
+        public ILiteral RightHand { get; set; }
 
         public LessThanEquals()
         {

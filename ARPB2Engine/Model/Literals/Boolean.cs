@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ARPB2Engine.Model
 {
-    public class Boolean : ILiteral<Boolean>, IEquatable<Boolean>
+    public class Boolean : ILiteral, IEquatable<Boolean>
     {
         bool value;
         public Boolean(bool value)
@@ -14,7 +14,7 @@ namespace ARPB2Engine.Model
             return value == other.value;
         }
 
-        object ILiteral<Boolean>.GetValue()
+        object ILiteral.GetValue()
         {
             return value;
         }

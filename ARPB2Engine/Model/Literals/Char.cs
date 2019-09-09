@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ARPB2Engine.Model
 {
-    public class Character : ILiteral<Character>, IEquatable<Character>
+    public class Character : ILiteral, IEquatable<Character>
     {
         char value;
         public Character(char value)
@@ -14,7 +14,7 @@ namespace ARPB2Engine.Model
             return (char)value == (char)other.value;
         }
 
-        object ILiteral<Character>.GetValue()
+        object ILiteral.GetValue()
         {
             return value;
         }

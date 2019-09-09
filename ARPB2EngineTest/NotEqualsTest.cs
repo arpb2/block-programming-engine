@@ -12,7 +12,7 @@ namespace ARPB2EngineTest
         [InlineData("blue", "blue", false)]
         public void TestNotEquals(String string1, String string2, bool expectedResult)
         {
-            NotEquals<ARPB2Engine.Model.String> gt = new NotEquals<ARPB2Engine.Model.String>
+            NotEquals gt = new NotEquals
             {
 
                 LeftHand = new ARPB2Engine.Model.String(string1),

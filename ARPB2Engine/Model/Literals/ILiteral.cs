@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ARPB2Engine.Model
 {
-    public interface ILiteral<T>
+    public interface ILiteral
     {
         Object GetValue();
     }

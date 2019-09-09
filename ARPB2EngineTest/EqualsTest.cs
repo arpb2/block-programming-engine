@@ -10,7 +10,7 @@ namespace ARPB2EngineTest
         [Fact]
         public void TestEquals()
         {
-            Equals<Boolean> equals = new Equals<Boolean>
+            Equals equals = new Equals
             {
                 LeftHand = new Boolean(true),
                 RightHand = new Boolean(false)

@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ARPB2Engine.Model
 {
-    public class Number : ILiteral<Number>, IEquatable<Number>
+    public class Number : ILiteral, IEquatable<Number>
     {
         int value;
         public Number(int value)
@@ -15,7 +15,7 @@ namespace ARPB2Engine.Model
         }
 
 
-        object ILiteral<Number>.GetValue()
+        object ILiteral.GetValue()
         {
             return value;
         }

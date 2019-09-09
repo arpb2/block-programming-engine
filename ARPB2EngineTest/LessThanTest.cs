@@ -13,12 +13,12 @@ namespace ARPB2EngineTest
         [InlineData(25, 14, false)]
         public void TestGreaterThanEquals(int number1, int number2, bool expectedResult)
         {
-            LessThan<Number> gt = new LessThan<Number>
+            LessThan lt = new LessThan
             {
                 LeftHand = new Number(number1),
                 RightHand = new Number(number2)
             };
-            Assert.Equal(expectedResult, gt.Execute());
+            Assert.Equal(expectedResult, lt.Execute());
         }
     }
 

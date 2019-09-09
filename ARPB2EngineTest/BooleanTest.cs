@@ -9,7 +9,7 @@ namespace ARPB2EngineTest
         [Fact]
         public void TestBoolean()
         {
-            ILiteral<ARPB2Engine.Model.Boolean> boolean = new ARPB2Engine.Model.Boolean(true);
+            ILiteral boolean = new ARPB2Engine.Model.Boolean(true);
             Assert.True((bool)boolean.GetValue());
         }
     }

@@ -13,7 +13,7 @@ namespace ARPB2EngineTest
         [InlineData(33, 13, false)]
         public void TestLessThanEquals(int number1, int number2, bool expectedResult)
         {
-            LessThanEquals<Number> gt = new LessThanEquals<Number>
+            LessThanEquals gt = new LessThanEquals
             {
                 LeftHand = new Number(number1),
                 RightHand = new Number(number2)

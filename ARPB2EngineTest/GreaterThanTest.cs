@@ -12,7 +12,7 @@ namespace ARPB2EngineTest
         [InlineData(10, 100, false)]
         public void TestGreaterThan(int number1, int number2, bool expectedResult)
         {
-            GreaterThan<Number> gt = new GreaterThan<Number>
+            GreaterThan gt = new GreaterThan
             {
                 LeftHand = new Number(number1),
                 RightHand = new Number(number2)
