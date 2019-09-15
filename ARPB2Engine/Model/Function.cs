@@ -7,12 +7,12 @@ namespace ARPB2Engine.Model
 
         public Function(Func<String, Number> func)
         {
-            this.executable = (System.Func<ARPB2Engine.Model.ILiteral, ARPB2Engine.Model.ILiteral>)func;
+            this.executable = func as Func<ILiteral, ILiteral>;
         }
 
         public Function(Func<String, String> func)
         {
-            this.executable = (System.Func<ARPB2Engine.Model.ILiteral, ARPB2Engine.Model.ILiteral>)func;
+            this.executable = func as Func<ILiteral, ILiteral>;
         }
 
         public override void Execute()

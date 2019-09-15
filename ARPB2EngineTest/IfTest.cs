@@ -29,26 +29,26 @@ namespace ARPB2EngineTest
             @if.Execute();
         }
 
-        //[Fact]
-        //public void TestIfStringString()
-        //{
-        //    Equals<ARPB2Engine.Model.Boolean> equals = new Equals<ARPB2Engine.Model.Boolean>
-        //    {
-        //        LeftHand = new ARPB2Engine.Model.Boolean(true),
-        //        RightHand = new ARPB2Engine.Model.Boolean(false)
-        //    };
+        [Fact]
+        public void TestIfStringString()
+        {
+            Equals equals = new Equals
+            {
+                LeftHand = new ARPB2Engine.Model.Boolean(true),
+                RightHand = new ARPB2Engine.Model.Boolean(false)
+            };
 
-        //    string Print(string str)
-        //    {
-        //        // TODO: Rethink test
-        //        str += "a";
-        //        return str;
-        //    }
+            String Print(String str)
+            {
+                // TODO: Rethink test
+                var res = (str as ILiteral).GetValue() + "a";
+                return new String(res);
+            }
 
-        //    Function function = new Function(Print);
-        //    If @if = new If(function);
-        //    @if.conditions.Add(equals);
-        //    @if.Execute();
-        //}
+            Function function = new Function(Print);
+            If @if = new If(function);
+            @if.conditions.Add(equals);
+            @if.Execute();
+        }
     }
 }
