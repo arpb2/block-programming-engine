@@ -9,28 +9,35 @@ namespace ARPB2EngineTest
     public class IfTest
     {
         [Fact]
-        public void TestIfStringInt()
+        public void TestIf()
         {
             Equals equals = new Equals
             {
                 LeftHand = new ARPB2Engine.Model.Boolean(true),
-                RightHand = new ARPB2Engine.Model.Boolean(false)
+                RightHand = new ARPB2Engine.Model.Boolean(true)
             };
 
-            Number Size(String str)
+            void Print(string str)
             {
-
-                return new Number(str.ToString().Length);
+                var res = str + "a";
+                Assert.True(res == "aa"); // Seems redundant but it's a workaround to test this delegate was called
             }
 
-            Function function = new Function(Size);
-            If @if = new If(function);
+            If @if = new If();
             @if.conditions.Add(equals);
-            @if.Execute();
+            try
+            {
+                @if.ExecuteHandler(Print, "a");
+            }
+            catch (Exception ex)
+            {
+                // There is no Assert.Fail in xUnit
+                Assert.True(false, "Expected no exception, but got: " + ex.Message);
+            }
         }
 
         [Fact]
-        public void TestIfStringString()
+        public void TestThenNotExecuted()
         {
             Equals equals = new Equals
             {
@@ -38,17 +45,23 @@ namespace ARPB2EngineTest
                 RightHand = new ARPB2Engine.Model.Boolean(false)
             };
 
-            String Print(String str)
+            void Print(string str)
             {
-                // TODO: Rethink test
-                var res = (str as ILiteral).GetValue() + "a";
-                return new String(res);
+                var res = str + "a";
+                Assert.True(false, "Called when it shouldn't");
             }
 
-            Function function = new Function(Print);
-            If @if = new If(function);
+            If @if = new If();
             @if.conditions.Add(equals);
-            @if.Execute();
+            try
+            {
+                @if.ExecuteHandler(Print, "a");
+            }
+            catch (Exception ex)
+            {
+                // There is no Assert.Fail in xUnit
+                Assert.True(false, "Expected no exception, but got: " + ex.Message);
+            }
         }
     }
 }

@@ -4,18 +4,17 @@ using ARPB2Engine.Model.Operators;
 
 namespace ARPB2Engine.Model
 {
-    public class If : Statement
+    public class If
     {
         public List<Operator> conditions { get; set; }
-        public Statement thenStatement;
+        public delegate void ThenStatement(string asd);
 
-        public If(Statement statement)
+        public If()
         {
             conditions = new List<Operator>();
-            thenStatement = statement;
         }
 
-        public void Execute()
+        public void ExecuteHandler(ThenStatement handler, string arg1)
         {
             bool allOK = true;
             foreach (Operator condition in conditions)
@@ -28,8 +27,7 @@ namespace ARPB2Engine.Model
             }
             if (allOK)
             {
-                //System.Console.WriteLine("then");
-                thenStatement.Execute();
+                handler(arg1);
             }
         }
     }
